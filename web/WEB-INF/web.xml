@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Cadastra</servlet-name>
+        <servlet-class>servlet.Cadastrar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Deletar</servlet-name>
+        <servlet-class>servlet.Deletar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Alterar</servlet-name>
+        <servlet-class>servlet.Alterar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Deletar</servlet-name>
+        <url-pattern>/Deletar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Alterar</servlet-name>
+        <url-pattern>/Alterar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cadastra</servlet-name>
+        <url-pattern>/Cadastrar</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
